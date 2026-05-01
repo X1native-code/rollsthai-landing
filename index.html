@@ -512,6 +512,55 @@
   }
   .cat-card:hover .cat-link { gap: 12px; }
 
+  /* ── BIG SUSHI BURGER SECTION ───────────────────────── */
+  .beast-section {
+    background: linear-gradient(135deg, #fff 0%, var(--gray-50) 100%);
+    padding: 100px 24px;
+    position: relative; overflow: hidden;
+  }
+  .beast-section::before {
+    content: ""; position: absolute;
+    top: -50%; right: -20%;
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(192,57,43,0.08) 0%, transparent 70%);
+    pointer-events: none; z-index: 0;
+  }
+  .beast-content {
+    position: relative; z-index: 1;
+    max-width: 720px; margin: 0 auto; text-align: center;
+  }
+  .beast-badge {
+    display: inline-block;
+    background: var(--red-50); color: var(--red);
+    font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+    padding: 8px 20px; border-radius: var(--radius-pill);
+    margin-bottom: 20px; border: 1px solid rgba(192,57,43,.2);
+  }
+  .beast-title {
+    font-family: var(--display);
+    font-size: clamp(42px, 6.2vw, 68px);
+    line-height: 1.05; letter-spacing: .01em; color: var(--black);
+    margin-bottom: 28px;
+  }
+  .beast-subtitle { color: var(--red); font-weight: 400; }
+  .beast-description {
+    font-size: 18.5px; line-height: 1.65; color: var(--gray-600);
+    max-width: 620px; margin: 0 auto 40px;
+  }
+  .beast-description p { margin-bottom: 18px; }
+  .beast-highlight { font-size: 19.5px; font-weight: 600; color: var(--black); line-height: 1.5; }
+  .beast-actions { margin-top: 20px; }
+  .beast-btn {
+    padding: 20px 38px; font-size: 17px; font-weight: 700;
+    box-shadow: var(--shadow-red);
+    transition: all .3s cubic-bezier(.34,1.56,.64,1);
+  }
+  .beast-btn:hover { transform: translateY(-4px) scale(1.03); box-shadow: 0 16px 40px rgba(192,57,43,.45); }
+  @media (max-width: 900px) {
+    .beast-section { padding: 80px 20px; }
+    .beast-title { font-size: clamp(38px, 7vw, 58px); }
+  }
+
   /* ── Reseñas Google ──────────────────────────────────── */
   .reviews-bg { background: #fff; }
   .reviews-grid {
@@ -1009,6 +1058,28 @@
   </div>
 </div>
 
+<!-- ======= BIG SUSHI BURGER - PRODUCTO ESTRELLA ======= -->
+<section class="section beast-section" id="la-bestia">
+  <div class="section-inner">
+    <div class="beast-content">
+      <div class="beast-badge"><span class="accent">★ PRODUCTO ESTRELLA</span></div>
+      <h2 class="beast-title">
+        La Big Sushi Burger de Medio Kilo.<br>
+        <span class="beast-subtitle">La que está rompiendo Lo Espejo.</span>
+      </h2>
+      <div class="beast-description">
+        <p>Medio kilo de puro placer en cada mordida: arroz japonés perfectamente sazonado, queso crema, palta fresca, cebollín crujiente y generoso pollo o camarón.</p>
+        <p class="beast-highlight">"Una experiencia tan brutal que te hace decir: Esto sí es otra cosa."</p>
+      </div>
+      <div class="beast-actions">
+        <a href="https://project-x9iin-git-main-x1native.vercel.app/" target="_blank" rel="noopener" class="btn-primary beast-btn">
+          🍔 Pedir La Big Sushi Burger ahora
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ======= CÓMO TE SERVIMOS ======= -->
 <section class="section" id="como-servimos">
   <div class="section-inner">
@@ -1274,7 +1345,7 @@
       <div class="x1-bottom-right">
         <a href="https://project-x9iin-git-main-x1native.vercel.app/" target="_blank" rel="noopener">Plataforma</a>
         <a href="https://wa.me/5548991574446" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="#">Casos</a>
+        <a href="https://project-x9iin-git-main-x1native.vercel.app/" target="_blank" rel="noopener">Casos</a>
       </div>
     </div>
   </div>
